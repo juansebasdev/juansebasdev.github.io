@@ -15,14 +15,20 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  bld,
+  taio,
+  university,
   carrent,
   jobit,
   tripguide,
   threejs,
+  python,
+  github,
+  unity,
+  unreal,
+  cpp,
+  django,
+  kubernetes,
 } from "../assets";
 
 export const navLinks = [
@@ -42,132 +48,137 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Games Developer",
+    icon: mobile,
+  },
+  {
+    title: "Web Developer",
+    icon: web,
+  },
+  {
+    title: "React Developer",
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "Python",
+    icon: python,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Unity",
+    icon: unity,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Django",
+    icon: django,
   },
   {
     name: "docker",
     icon: docker,
   },
+  {
+    name: "Unreal Engine",
+    icon: unreal,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "Github",
+    icon: github,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
+  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Developer",
+    company_name: "bld.ai",
+    icon: bld,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jun 2022 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop API REST services using frameworks such as Django with Python and Express with NodeJS.",
+      "Support and Maintain the web user interfaces, using ReactJS.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Augmented Reality / Mixed Reality Developer",
+    company_name: "Taio Systems",
+    icon: taio,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Nov 2021 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop augmented reality (AR) and mixed reality (MR) multiplatform applications with Unreal Engine and Unity.",
+      "Develop and Integrate API REST services for AR and MR applications.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Software Developer",
+    company_name: "Universidad de Nariño",
+    icon: university,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Apr 2021 - May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Design the architecture for a SCADA system for the microgrid of the university.",
+      "Develop the backend and frontend modules of the application.",
+      "Support the programming of the devices associated with the microgrid, which use MQTT and Modbus as communication protocols, for its connection and communication with the SCADA.",
     ],
   },
 ];
+
+const socialNetworks = {
+  linkedin: {
+    name: "Linkedin",
+    url: "https://linkedin.com/in/juansebasbravo",
+  },
+  github: {
+    name: "Github",
+    url: "https://github.com/juansebasdev",
+  },
+  itch: {
+    name: "Itch",
+    url: "https://juansebas.itch.io/",
+  },
+  email: {
+    name: "Email",
+    url: "jbravomeneses@gmail.com",
+  },
+};
 
 const testimonials = [
   {
@@ -262,4 +273,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  socialNetworks,
+  testimonials,
+  projects,
+};

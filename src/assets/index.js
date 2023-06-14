@@ -7,6 +7,12 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import python from "./tech/python.png";
+import unity from "./tech/unity.png";
+import unreal from "./tech/unreal.png";
+import cpp from "./tech/cpp.png";
+import django from "./tech/django.png";
+import kubernetes from "./tech/kubernetes.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -22,9 +28,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import university from "./company/university.png";
+import bld from "./company/bld.png";
+import taio from "./company/taio.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -53,10 +59,16 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
+  university,
+  bld,
+  taio,
   carrent,
   jobit,
   tripguide,
+  python,
+  unity,
+  unreal,
+  cpp,
+  django,
+  kubernetes
 };

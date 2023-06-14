@@ -1,11 +1,16 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaGithub, FaEnvelope, FaItchIo } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
+import { socialNetworks } from "../constants";
+
+import "./Contact.css";
 
 const Contact = () => {
   const formRef = useRef();
@@ -58,18 +63,57 @@ const Contact = () => {
       );
   };
 
+  const linkedin = () => {
+    window.open(
+      `${socialNetworks.linkedin.url}`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+  const github = () => {
+    window.open(
+      `${socialNetworks.github.url}`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+  const email = () => {
+    window.open(
+      `mailto:${socialNetworks.email.url}`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+  const itch = () => {
+    window.open(
+      `mailto:${socialNetworks.itch.url}`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl h-[450px]"
+        style={{ margin: "auto" }}
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 style={{ marginBottom: "20%" }} className={styles.sectionHeadText}>
+          Contact.
+        </h3>
 
-        <form
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          <FaLinkedin className="social-btn" onClick={linkedin} size={56} />
+          <FaItchIo className="social-btn" onClick={itch} size={56} />
+          <FaGithub className="social-btn" onClick={github} size={56} />
+          <FaEnvelope className="social-btn" onClick={email} size={56} />
+        </div>
+
+        {/* <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
@@ -114,7 +158,7 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </form>
+        </form> */}
       </motion.div>
 
       <motion.div
