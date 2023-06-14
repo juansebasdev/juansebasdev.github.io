@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a game and software developer passionate about programming,
+        I'm a games and software developer passionate about programming,
         mathematics, and physics. I like learning and facing new challenges. I
         have experience in the development of Augmented and Mixed reality
         applications; besides, I have worked not only as a backend but also as a
