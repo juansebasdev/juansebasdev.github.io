@@ -1,7 +1,13 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FaLinkedin, FaGithub, FaEnvelope, FaItchIo } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaItchIo,
+  FaTiktok,
+} from "react-icons/fa";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -11,6 +17,7 @@ import { slideIn } from "../utils/motion";
 import { socialNetworks } from "../constants";
 
 import "./Contact.css";
+import { tiktok } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -86,7 +93,15 @@ const Contact = () => {
   };
   const itch = () => {
     window.open(
-      `mailto:${socialNetworks.itch.url}`,
+      `${socialNetworks.itch.url}`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
+  const tiktok = () => {
+    window.open(
+      `${socialNetworks.tiktok.url}`,
       "_blank",
       "noreferrer,noopener"
     );
@@ -109,6 +124,7 @@ const Contact = () => {
         <div style={{ display: "flex", justifyContent: "space-around" }}>
           <FaLinkedin className="social-btn" onClick={linkedin} size={56} />
           <FaItchIo className="social-btn" onClick={itch} size={56} />
+          <FaTiktok className="social-btn" onClick={tiktok} size={56} />
           <FaGithub className="social-btn" onClick={github} size={56} />
           <FaEnvelope className="social-btn" onClick={email} size={56} />
         </div>

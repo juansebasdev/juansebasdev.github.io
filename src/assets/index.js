@@ -5,6 +5,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import itch from "./itch.png";
+import tiktok from "./tiktok.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import neoncity from "./neoncity.png";
@@ -75,4 +76,5 @@ export {
   kubernetes,
   neoncity,
   itch,
+  tiktok,
 };

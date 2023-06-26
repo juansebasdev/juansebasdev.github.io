@@ -175,6 +175,10 @@ const socialNetworks = {
     name: "Itch",
     url: "https://juansebas.itch.io/",
   },
+  tiktok: {
+    name: "TikTok",
+    url: "https://www.tiktok.com/@juansebas96",
+  },
   email: {
     name: "Email",
     url: "jbravomeneses@gmail.com",
@@ -212,7 +216,7 @@ const projects = [
   {
     name: "Neon City",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Immerse yourself in a cyberpunk city full of action and adrenaline as you control one of our three unique characters. Dodge obstacles, compete against other racers online, and collect incredible items to restore your health and energy. Get ready for an exciting and full of surprises gaming experience in a randomly generated scenario!",
     tags: [
       {
         name: "unity",
